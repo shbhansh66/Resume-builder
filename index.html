@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+<div class="resume-header">
+    <p class="job-title">Create</p>
+    <h1 id="resume-name">Resume</h1>
+  </div>
+  
+
+
+  <div class="container">
+
+    <div class="form-container">
+      <h2>Resume Builder</h2>
+      <form id="resume-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="contact">Contact Info</label>
+        <input type="text" id="contact" name="contact" placeholder="Enter your contact info" required>
+
+        <label for="education">Education</label>
+        <input type="text" id="education" name="education" placeholder="Enter your education" required>
+
+        <label for="work">Work Experience</label>
+        <input type="text" id="work" name="work" placeholder="Enter your work experience" required>
+
+        <label for="skills">Skills</label>
+        <input type="text" id="skills" name="skills" placeholder="Enter your skills" required>
+
+        <button type="submit">Generate Resume</button>
+      </form>
+    </div>
+
+    <div class="template-selection">
+      <h3>Choose a Template</h3>
+      <button class="template" id="template1">Template 1</button>
+      <button class="template" id="template2">Template 2</button>
+    </div>
+
+  
+    <div class="resume-preview">
+      <h2>Resume Preview</h2>
+      <div id="resume-output">
+        <p>Enter your details to see a preview of your resume.</p>
+      </div>
+      <button id="download-btn">Download as PDF</button>
+    </div>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
